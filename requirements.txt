@@ -1,0 +1,4 @@
+APScheduler>=3.10.4
+watchdog>=4.0.1
+pandas>=2.2.2
+requests>=2.32.3

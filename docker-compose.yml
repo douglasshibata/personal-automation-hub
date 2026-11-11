@@ -1,0 +1,11 @@
+services:
+  automation-hub:
+    image: python:3.11-slim
+    container_name: personal-automation-hub
+    working_dir: /app
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: sh -c "pip install --no-cache-dir -r requirements.txt && python3 main.py"
+    restart: unless-stopped
